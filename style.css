@@ -1,12 +1,11 @@
 .container {
     font-family: Arial, Helvetica, sans-serif;
     background-color: blueviolet;
-    display: flex;
+    
 }
 
 .demo {
       display: flex;
-      gap: 15px;
       padding: 20px;
       background-color: aqua;
 }
@@ -22,12 +21,23 @@
       border-radius: 5px;
 }
 
-.content:hover {
+.fizz:hover {
     background-color: beige;
-    transform: translate(-5px);
-     border: 2px solid black;
+
 }
 
 .juan {
     background-color: brown;
     }
+
+.buzz:hover {
+
+    transform: translateY(5px);
+     
+}
+
+.fizzbuzz:hover {
+
+    transform: rotate(5deg);
+     
+}

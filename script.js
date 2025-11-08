@@ -10,13 +10,43 @@ function addClass(containerDiv,className){
     containerDiv.classList.add(className)
 }
 
-document.addEventListener("DOMContentLoaded",function(){
-    const containerDivs=document.querySelectorAll(".content") 
-   
-    for (i=0; i<containerDivs.length; i++)  { 
-        addClass(containerDivs[i], "juan") 
-        console.log(containerDivs[i])
-    }
-    
+function createMatrix(dimension, container,divisorfizz,divisorbuzz,divisorfizzbuzz){
+    let counter = 1
+    for (let i=0;i<dimension;i++){
+        const div = document.createElement("div")
+        addClass(div, "demo")
+        for(let j=0;j<dimension;j++){
+            const content = document.createElement("div")
+            addClass(content, "content")
+            fizz(divisorfizz, content,counter)
+            buzz(divisorbuzz, content,counter)
+            fizzbuzz(divisorfizzbuzz, content,counter)
+            content.textContent= counter
+            div.appendChild(content)
+            counter++
 
-})
+        }
+        container.appendChild(div)
+        
+    }
+}
+function fizz(divisor,square, number){
+    if (number%divisor==0){
+        addClass(square,"fizz",)
+    }
+}
+function buzz(divisor,square, number){
+    if (number%divisor==0){
+        addClass(square,"buzz",)
+    }
+}
+function fizzbuzz(divisor,square, number){
+    if (number%divisor==0){
+        addClass(square,"fizzbuzz",)
+    }
+}
+document.addEventListener("DOMContentLoaded",function(){
+    const container= document.querySelector(".container")
+    createMatrix(5,container,2,3)
+    }
+)
