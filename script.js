@@ -47,7 +47,7 @@ function buzz(divisor,square, number){
 function fizzbuzz(divisor,square, number){
     if (number%divisor==0){
         addClass(square,"fizzbuzz",)
-        
+
     }
 }
 document.addEventListener("DOMContentLoaded",function(){
