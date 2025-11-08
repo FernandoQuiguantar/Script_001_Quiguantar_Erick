@@ -1,0 +1,33 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+    display: flex;
+}
+
+.demo {
+      display: flex;
+      gap: 15px;
+      padding: 20px;
+      background-color: aqua;
+}
+
+.content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid aqua;
+      height: 50px;
+      width: 50px; 
+      transition:background-color 1s, transform 1s; 
+      border-radius: 5px;
+}
+
+.content:hover {
+    background-color: beige;
+    transform: translate(-5px);
+     border: 2px solid black;
+}
+
+.juan {
+    background-color: brown;
+    }
