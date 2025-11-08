@@ -10,7 +10,7 @@ function addClass(containerDiv,className){
     containerDiv.classList.add(className)
 }
 
-function createMatrix(dimension, container,divisorfizz,divisorbuzz,divisorfizzbuzz){
+function createMatrix(dimension, container,divisorfizz,divisorbuzz,){
     let counter = 1
     for (let i=0;i<dimension;i++){
         const div = document.createElement("div")
@@ -20,8 +20,10 @@ function createMatrix(dimension, container,divisorfizz,divisorbuzz,divisorfizzbu
             addClass(content, "content")
             fizz(divisorfizz, content,counter)
             buzz(divisorbuzz, content,counter)
-            fizzbuzz(divisorfizzbuzz, content,counter)
-            content.textContent= counter
+            fizzbuzz(divisorfizz*divisorbuzz, content,counter)
+            if(!content.textContent){
+                content.textContent = counter
+            }
             div.appendChild(content)
             counter++
 
@@ -33,16 +35,19 @@ function createMatrix(dimension, container,divisorfizz,divisorbuzz,divisorfizzbu
 function fizz(divisor,square, number){
     if (number%divisor==0){
         addClass(square,"fizz",)
+        
     }
 }
 function buzz(divisor,square, number){
     if (number%divisor==0){
         addClass(square,"buzz",)
+       
     }
 }
 function fizzbuzz(divisor,square, number){
     if (number%divisor==0){
         addClass(square,"fizzbuzz",)
+        
     }
 }
 document.addEventListener("DOMContentLoaded",function(){

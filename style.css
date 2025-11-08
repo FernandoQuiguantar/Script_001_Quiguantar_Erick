@@ -32,12 +32,12 @@
 
 .buzz:hover {
 
-    transform: translateY(5px);
+    transform: translateY(-5px);
      
 }
 
 .fizzbuzz:hover {
-
+    background-color: beige;
     transform: rotate(5deg);
-     
+    transform: translateY(-5px);
 }
