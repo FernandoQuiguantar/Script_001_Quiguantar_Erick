@@ -1,20 +1,21 @@
 .container {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: blueviolet;
+    border-top: 1px solid gray;
+    padding: 5px;
     
 }
 
 .demo {
       display: flex;
       padding: 20px;
-      background-color: aqua;
+      background-color: rgb(213, 224, 224);
 }
 
 .content {
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid aqua;
+      border: 1px solid aqua(153, 207, 232);
       height: 50px;
       width: 50px; 
       transition:background-color 1s, transform 1s; 
@@ -22,7 +23,7 @@
 }
 
 .fizz:hover {
-    background-color: beige;
+    background-color: rgb(235, 235, 83);
 
 }
 
@@ -37,6 +38,43 @@
 }
 
 .fizzbuzz:hover {
-    background-color: beige;
+    background-color: rgb(225, 190, 53);
     transform: rotate(5deg) translateY(-5px);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+   padding: 20px;
+}
+
+#controls{
+    margin: 10px;
+    display: flex;
+    background-color: gray;
+}
+
+.input-group{
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.input-group input{
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.input-group button{
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color:cornflowerblue;
+    border: 1px solid rgb(74, 110, 177);
+    border-radius: 5px;
+}
+
+.input-group button:hover{
+    background-color: salmon;
 }
